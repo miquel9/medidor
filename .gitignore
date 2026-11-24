@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Datos y modelos pesados (gestionar con DVC / Git LFS si aplica)
+data/raw/*
+!data/raw/.gitkeep
+data/annotated/*
+!data/annotated/.gitkeep
+data/eval/*
+!data/eval/.gitkeep
+
+# Flutter / Android
+app/.dart_tool/
+app/build/
+app/.flutter-plugins
+app/.flutter-plugins-dependencies
+
+# Native C++
+native/build/
+
+# IDEs / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
